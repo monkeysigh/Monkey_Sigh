@@ -1,3 +1,9 @@
+# the code was not written by me, nor do I claim any ownership, 
+## I added a few personal 33 comments to the already existent by the generated source. Obvious to argue about errors.
+### posted to show how a small syntax error cannot allow the code to execute. 
+
+
+python
 
 # Define the variables
 total_orders_processed = 5000
