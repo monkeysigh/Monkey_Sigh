@@ -1,4 +1,3 @@
-# futval_interest.py
 
 def main():
 
