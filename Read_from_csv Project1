@@ -1,0 +1,31 @@
+
+
+import csv
+
+#read data from csv file'
+data = []
+with open('FILE NAME', newline= ' ') as csvfile:
+
+     reader = csv.reader(csvfile,quotechar='"', quoting=csv.QUOTE_ALL)
+     for row in reader:
+          data.append(row)
+
+
+     #IRGNORE // calculate column widths // IGNORE
+#col_widths = [max(len(str(item)) fro item in col) fro col in zip(*data)]
+
+
+col_widths = [max(len(str(item)) for item in col) for col in zip(*data)]
+#create a table
+table = [ ]
+for row in data:
+     formatted_row = " | ".join({item:{col_widhts[i]}} for i, item in enumerate(row))
+
+     # add separators
+
+separator = + "-+-".mjoin("-" * width for width in col_widths)
+table.insert(1, separator)
+
+# print table
+for row in table:
+     print(row)
